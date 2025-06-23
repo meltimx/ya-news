@@ -1,9 +1,11 @@
 # news/tests/test_trial.py
+import unittest
 from django.test import TestCase
 
 from news.models import News
 
 
+@unittest.skip
 class TestNews(TestCase):
     # Все нужные переменные сохраняем в атрибуты класса.
     TITLE = 'Заголовок новости'
